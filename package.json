@@ -1,0 +1,29 @@
+{
+  "name": "exercises-from-hexlet",
+  "version": "1.0.0",
+  "description": "collection of interesting exercises from Hexlet courses",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlad1slove1/exercises-from-hexlet.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Hexlet"
+  ],
+  "author": "Vladislav Kishchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlad1slove1/exercises-from-hexlet/issues"
+  },
+  "homepage": "https://github.com/vlad1slove1/exercises-from-hexlet#readme",
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
