@@ -24,13 +24,14 @@ const firstSolution = (fruits) => {
     }
     // console.log(result);
   }
+
   return result;
 };
 
 console.log(firstSolution(bag));
 
 /*
-While traversing the array, this function takes the result object,
+First solution travers the array, this function takes the result object,
 extracts the desired property from it, and increments the value by one.
 */
 
@@ -44,6 +45,7 @@ const secondSolution = (fruits) => {
     } else {
       result[fruit] = 1;
     }
+    // console.log(result);
   }
 
   return result;
@@ -52,8 +54,8 @@ const secondSolution = (fruits) => {
 console.log(secondSolution(bag));
 
 /*
-The hasOwnProperty() method returns a boolean indicating whether the object
-has the specified property as its own property (as opposed to inheriting it).
+Second solution uses bult-in hasOwnProperty() method, that returns a boolean indicating
+whether the object has the specified property as its own property.
 */
 
 const thirdSolution = (fruits) => {
@@ -66,6 +68,7 @@ const thirdSolution = (fruits) => {
     } else {
       result[fruit] = 1;
     }
+    // console.log(result);
   }
 
   return result;
@@ -74,6 +77,6 @@ const thirdSolution = (fruits) => {
 console.log(thirdSolution(bag));
 
 /*
-Therefore, it is better to check for the existence of the key using the lodash library.
-It contains the has.js function, which haven't the disadvantages of built-in methods.
+Third solution is better to check for the existence of the key, and uses the lodash library.
+Lodash contains has.js function, which haven't the disadvantages of built-in methods.
 */
