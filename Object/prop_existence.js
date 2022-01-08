@@ -80,3 +80,22 @@ console.log(thirdSolution(bag));
 Third solution is better to check for the existence of the key, and uses the lodash library.
 Lodash contains has.js function, which haven't the disadvantages of built-in methods.
 */
+
+const fourthSolution = (fruits) => {
+  const result = {};
+
+  for (const fruit of fruits) {
+    // check property for existence
+    result[fruit] = (result[fruit] ?? 0) + 1;
+    // console.log(result);
+  }
+
+  return result;
+};
+
+console.log(fourthSolution(bag));
+
+/*
+Fourth solution uses the nullish coalescing operator (??). It allows you to set a default
+value when it is null or undefined.
+*/
