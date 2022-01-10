@@ -1,7 +1,6 @@
-import _ from 'lodash';
+const one = ['user'];
+const two = 'user';
+const three = one.toString();
 
-const text1 = 'one two three two ONE one wow';
-
-const solution = _.words(text1.toLowerCase());
-
+const solution = three === two ? 'yes' : 'no';
 console.log(solution);
