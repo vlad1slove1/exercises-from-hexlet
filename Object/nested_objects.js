@@ -22,7 +22,7 @@ const data = {
   },
 };
 
-// Edit this arra to check different iterations
+// Edit this array to check different iterations
 const givenArr = ['hosts', 1, 'name'];
 
 const firstSolution = (obj, arr) => {
