@@ -22,7 +22,7 @@ const firstSolution = (obj) => {
   const result = {};
 
   for (const key in obj) {
-    const isKeyObject = isObject(key);
+    const isKeyObject = isObject(obj[key]);
 
     if (isKeyObject) {
       result[key] = firstSolution(obj[key]);
