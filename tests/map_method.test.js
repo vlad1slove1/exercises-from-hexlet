@@ -31,6 +31,9 @@ const result = [
   { name: 'Tisha', birthday: '2012-11-03' },
 ];
 
+// checking for result
 assert.deepStrictEqual(solution(users), result);
+// checking for free massive
+assert.deepStrictEqual(solution([]), []);
 
 console.log('All tests passed!');
