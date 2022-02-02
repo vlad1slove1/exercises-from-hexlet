@@ -1,3 +1,4 @@
+import { strict as assert } from 'assert';
 import solution from '../Functions/map_method.js';
 
 const users = [
@@ -30,8 +31,6 @@ const result = [
   { name: 'Tisha', birthday: '2012-11-03' },
 ];
 
-if (solution(users).toString() !== result.toString()) {
-  throw new Error('Function is not working properly!');
-}
+assert.deepStrictEqual(solution(users), result);
 
 console.log('All tests passed!');
