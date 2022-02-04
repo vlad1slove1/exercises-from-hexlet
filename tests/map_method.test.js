@@ -1,4 +1,3 @@
-import { strict as assert } from 'assert';
 import solution from '../Functions/map_method.js';
 
 const users = [
@@ -32,8 +31,7 @@ const result = [
 ];
 
 // checking for result
-assert.deepStrictEqual(solution(users), result);
-// checking for free massive
-assert.deepStrictEqual(solution([]), []);
-
-console.log('All tests passed!');
+test('solution', () => {
+  expect(solution(users)).toEqual(result);
+  expect(solution([])).toEqual([]);
+});
