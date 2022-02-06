@@ -6,3 +6,4 @@ This repository contains interesting exercises from [Hexlet](https://hexlet.io) 
 
 Several exercises have tests based on Jest.
 Run tests with `make test`
+Display tests coverage with `make test-coverage`
