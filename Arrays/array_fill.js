@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 /*
 Implement a function, that takes an array as argument and fills it with given value
 from start index (inclusive) to last index (not inclusive). Function mutates default coll.
@@ -33,7 +35,6 @@ const secondSolution = (coll, value, start = 0, end = coll.length) => {
   const normalizedStart = start > collLength ? end : start;
   const normalizedEnd = end > collLength ? collLength : end;
   for (let i = normalizedStart; i < normalizedEnd; i += 1) {
-    // eslint-disable-next-line no-param-reassign
     coll[i] = value;
   }
   return coll;
