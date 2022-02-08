@@ -27,7 +27,7 @@ const firstSolution = (coll, value, start = 0, end = coll.length) => {
   }
 
   // else returning filled array
-  return coll.length(value, start, end);
+  return coll.fill(value, start, end);
 };
 
 const secondSolution = (coll, value, start = 0, end = coll.length) => {
