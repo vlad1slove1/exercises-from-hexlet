@@ -14,15 +14,14 @@ from start index (inclusive) to last index (not inclusive). Function mutates def
 */
 
 const firstSolution = (coll, value, start = 0, end = coll.length) => {
-  const collLength = coll.length;
   // if start is bigger than array's length, function returns default arr
-  if (start >= collLength) {
+  if (start >= coll.length) {
     return coll;
   }
 
   // if end is bigger that array's length, function is fills whole array by value
-  if (end > collLength) {
-    coll.fill(value, 0, collLength);
+  if (end > coll.length) {
+    coll.fill(value, 0, coll.length);
     return coll;
   }
 
