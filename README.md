@@ -6,10 +6,11 @@ This repository contains interesting exercises from [Hexlet](https://hexlet.io) 
 
 **Several exercises have tests based on Jest.**
 
-Run tests with `make test`
+1) Run tests with `make test`
+2) Display tests coverage with `make test-coverage`
+3) To run a specific test `NODE_OPTIONS=--experimental-vm-modules npx jest *test file-name*`
 
-Display tests coverage with `make test-coverage`
-
-To run a specific test `NODE_OPTIONS=--experimental-vm-modules npx jest *test file name*`
-
-*exapmle* `NODE_OPTIONS=--experimental-vm-modules npx jest NODE_OPTIONS=--experimental-vm-modules npx jest`
+**example**
+```
+NODE_OPTIONS=--experimental-vm-modules npx jest abstr_with_segments.test.js
+```
