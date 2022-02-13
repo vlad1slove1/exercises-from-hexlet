@@ -41,6 +41,17 @@ const getWidth = (rectangle) => rectangle.width;
 // height selector
 const getHeight = (rectangle) => rectangle.height;
 
+//    2    |     1
+//    _____|_____
+//   |     |     |
+// __|_____|_____|____
+//   |    0|     |
+//   |_____|_____|
+//         |
+//    3    |    4
+
+// if the first point is inside 1 quadrant, and the last point is inside 4 quadrant, then
+// the coordinate center is inside our rectangle (true)
 const containsOrigin = (rectangle) => {
   const firstPoint = getStartPoint(rectangle);
   const lastPoint = makeDecartPoint(
